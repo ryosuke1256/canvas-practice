@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas Practice</title>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <script>
+      'use strict';
+      const canvas = document.getElementById('canvas');
+      const ctx = canvas.getContext('2d');
+
+      ctx.fillStyle = 'lightBlue';
+      ctx.globalAlpha = 0.8;
+      ctx.fillRect(10, 10, 450, 70);
+      ctx.font = '48px fantasy';
+      ctx.textAlign = 'start';
+      ctx.textBaseline = 'middle';
+      ctx.strokeText('Hello world!', 10, 50);
+    </script>
+    <noscript>Your browser does not support JavaScript!</noscript>
+  </body>
+</html>
